@@ -32,7 +32,7 @@ const Navbar = () => {
                 </Link>
             </div>
             <div className="hidden md:flex md:items-center md:justify-center gap-8 text-xl">
-                <Link to="/hero" className="text-stone-300 hover:text-white">Home</Link>
+                <Link to="/" className="text-stone-300 hover:text-white">Home</Link>
                 <Link to="/technologies" className="text-stone-300 hover:text-white">Technologies</Link>
                 <Link to="/projects" className="text-stone-300 hover:text-white">Projects</Link>
                 <Link to="/experience" className="text-stone-300 hover:text-white">Experience</Link>

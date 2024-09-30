@@ -19,7 +19,7 @@ const App = () => {
                 <div className="container mx-auto px-8">
                     <Navbar />
                     <Routes>
-                        <Route path="/hero" element={<Hero />} />
+                        <Route path="/" element={<Hero />} />
                         <Route path="/technologies" element={<Technologies />} />
                         <Route path="/projects" element={<Project />} />
                         <Route path="/experience" element={<Experience />} />
