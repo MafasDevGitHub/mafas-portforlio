@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import Contact from "./components/Contact";
 import Experience from "./components/Experience";
 import Hero from "./components/Hero";
@@ -18,12 +18,15 @@ const App = () => {
                 </div>
                 <div className="container mx-auto px-8">
                     <Navbar />
+
                     <Routes>
                         <Route path="/" element={<Hero />} />
                         <Route path="/technologies" element={<Technologies />} />
                         <Route path="/projects" element={<Project />} />
                         <Route path="/experience" element={<Experience />} />
                         <Route path="/contact" element={<Contact />} />
+                        {/* Redirect any unmatched route to the Hero page */}
+                        <Route path="*" element={<Navigate to="/" />} />
                     </Routes>
                 </div>
             </div>
