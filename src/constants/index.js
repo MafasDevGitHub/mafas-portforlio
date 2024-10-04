@@ -25,7 +25,7 @@ export const EXPERIENCES = [
   {
     year: "2022",
     role: "E-COMMERCE WEB SITE",
-    company: "Univercity group Project",
+    company: "University group Project",
     description: ` for a mobile accessories store, implementing the crud operations with admin panel. `,
     technologies: ["PHP", "JavaScript", "HTTML", "CSS","MySQL"],
   },

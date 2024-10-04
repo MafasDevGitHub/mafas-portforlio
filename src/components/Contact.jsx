@@ -10,6 +10,10 @@ const Contact = () => {
         visible: { opacity: 1, scale: 1, transition: { duration: 0.6, ease: "easeOut" } }
     };
 
+    // Your WhatsApp number in international format (e.g., +1234567890)
+    const whatsappNumber = '+94761200230'; // Replace with your actual WhatsApp number
+    const welcomeMessage = encodeURIComponent("Hello! I'm interested in learning more about your work. How can we connect?");
+
     return (
         <motion.div
             ref={ref}
@@ -29,6 +33,50 @@ const Contact = () => {
                     {CONTACT.email}
                 </a>
             </div>
+            {/* Footer Section */}
+            <footer className="text-center mt-10">
+                <p className="text-sm text-gray-500">
+                    © 2024 Mohamed Mafas. All rights reserved.
+                </p>
+                <p className="text-xs text-gray-400 mb-2">
+                    Aspiring Full Stack Developer passionate about creating innovative solutions and leveraging technology for real-world impact.
+                </p>
+                <p className="text-xs text-gray-400 mb-2">
+                    Skilled in web and mobile application development, with hands-on experience in technologies such as React, Node.js, and various database systems.
+                </p>
+                <br />
+                <p className="text-xs text-gray-400 mb-2">
+                    Connect with me on:
+                    <a href="https://www.linkedin.com/in/m-mafas/" target="_blank" rel="noopener noreferrer" className="text-blue-500 mx-1">
+                        LinkedIn
+                    </a>
+                    |
+                    <a href="https://www.facebook.com/mhdmafas.mhdmafas.3" target="_blank" rel="noopener noreferrer" className="text-blue-500 mx-1">
+                        Facebook
+                    </a>
+                    |
+                    <a href="https://github.com/MafasDevGitHub" target="_blank" rel="noopener noreferrer" className="text-blue-500 mx-1">
+                        GitHub
+                    </a>
+                </p>
+                <p className="text-xs text-gray-400 mb-2">
+                    Interested in collaboration, internships, or freelance opportunities? I’m open to new projects and eager to contribute!
+                </p>
+                <p className="text-xs text-gray-400 mb-2">
+                    Let's connect and create something amazing together!
+                </p>
+                {/* WhatsApp Link with Default Message */}
+                <p className="text-xs text-gray-400">
+                    Chat with me on WhatsApp:
+                    <a 
+                        href={`https://wa.me/${whatsappNumber}?text=${welcomeMessage}`} 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="text-blue-500 mx-1">
+                        WhatsApp
+                    </a>
+                </p>
+            </footer>
         </motion.div>
     );
 }

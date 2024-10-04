@@ -3,6 +3,7 @@ import profilePic from "../assets/MafasProfile.jpg";
 import { HERO_CONTENT } from "../constants";
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import { useState, useEffect } from 'react';
 
 const Hero = () => {
     const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.2 });
@@ -11,6 +12,16 @@ const Hero = () => {
         hidden: { opacity: 0, x: -100 },
         visible: { opacity: 1, x: 0, transition: { duration: 0.8, staggerChildren: 0.5 } }
     };
+
+    const titles = ["Full Stack Developer", "MERN Stack"];
+    const [currentTitle, setCurrentTitle] = useState(0);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentTitle((prev) => (prev === titles.length - 1 ? 0 : prev + 1));
+        }, 3000); // Change every 3 seconds
+        return () => clearInterval(interval);
+    }, [titles.length]);
 
     return (
         <motion.div
@@ -29,9 +40,26 @@ const Hero = () => {
                 <div className="w-full lg:w-1/2">
                     <div className="flex flex-col items-center lg:items-start mt-10">
                         <h2 className="pb-2 text-4xl tracking-tighter lg:text-8xl">Mohamed <b>Mafas</b></h2>
-                        <span className="bg-gradient-to-r from-stone-300 to-stone-600 bg-clip-text text-3xl tracking-tight text-transparent">
-                            Full Stack Developer
-                        </span>
+
+                        {/* Titles Animation */}
+                        <motion.span
+                            className='bg-gradient-to-r from-stone-300 to-stone-600 bg-clip-text text-3xl tracking-tight text-transparent'
+                            key={currentTitle}
+                            initial={{ opacity: 0, skewX: 20, x: -100 }}  // Skew and slide in from left
+                            animate={{ opacity: 1, skewX: 0, x: 0 }}      // Normal position
+                            exit={{ opacity: 0, skewX: -20, x: 100 }}     // Skew and slide out to right
+                            transition={{
+                                duration: 0.8,
+                                ease: "easeInOut",
+                                type: "tween"
+                            }}
+                        >
+                            {titles[currentTitle]}
+                        </motion.span>
+
+
+
+
                         <p className="my-2 max-w-lg py-6 text-xl leading-relaxed tracking-tighter">
                             {HERO_CONTENT}
                         </p>
