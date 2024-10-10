@@ -16,6 +16,9 @@ const Hero = () => {
     const titles = ["Full Stack Developer", "MERN Stack"];
     const [currentTitle, setCurrentTitle] = useState(0);
 
+    const whatsappNumber = '+94761200230';
+    const welcomeMessage = encodeURIComponent("Hello! I am currently seeking internship opportunities and would love to discuss how I can contribute to your team. Could we connect to explore potential collaboration?");
+
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentTitle((prev) => (prev === titles.length - 1 ? 0 : prev + 1));
@@ -78,13 +81,27 @@ const Hero = () => {
                                 <FaFacebook />
                             </a>
                         </div><br />
-                        <a href="/mafas-portforlio/resume.pdf"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            download="Mafas_resume.pdf"
-                            className="bg-white rounded-full p-4 tex-sm text-stone-800 mb-10">
-                            Download Resume
-                        </a>
+                        <div className="flex justify-center items-center space-x-4">
+                            <a href="/mafas-portforlio/resume.pdf"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                download="Mafas_resume.pdf"
+                                className="bg-white rounded-harf p-2 text-md text-stone-1000 w-full max-w-xs flex-grow text-center
+                                hover:bg-stone-200 hover:text-stone-700 hover:shadow-lg transition duration-200 ease-on-out">
+                                Download Resume
+                            </a>
+                            <a href={`https://wa.me/${whatsappNumber}?text=${welcomeMessage}`}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="bg-white rounded-harf p-5 text-md text-stone-1000 w-full max-w-xs flex-grow text-center
+                                hover:bg-stone-200 hover:text-stone-700 hover:shadow-lg transition duration-200 ease-on-out">
+                                Hire Me
+                            </a>
+                        </div>
+
+
+
+
 
                     </div>
                 </div>

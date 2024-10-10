@@ -9,11 +9,18 @@ export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer s
 
 export const EXPERIENCES = [
   {
-    year: "2023 - Present",
-    role: "Daily News Hub",
+    year: "2024 - Present [In Progress]",
+    role: "DAILY NEWS HUB",
     company: "Personal Project",
     description: `Developed an engaging platform for reading news with dynamic, interactive content, leveraging a virtual database to efficiently store and retrieve real-time updates. Focused on creating a seamless, user-friendly interface for enhanced user experience`,
     technologies: ["ReactJS", "Redux"],
+  },
+  {
+    year: "2024 - Present [In Progress]",
+    role: "FLICKBASE",
+    company: "Personal Project",
+    description: `Flickbase is a dynamic article database application designed to offer users an intuitive and personalized reading experience. The platform allows users to search for, explore, and save articles across various topics, ensuring they can easily access the content that interests them the most. With a focus on performance and scalability, I contributed to the development of the app by implementing both the front-end and back-end.`,
+    technologies: ["ReactJS", "NodeJS","Express","MongoDB"],
   },
   {
     year: "2023",
@@ -23,15 +30,15 @@ export const EXPERIENCES = [
     technologies: ["Java", "MySql"],
   },
   {
-    year: "2022",
+    year: "2023",
     role: "E-COMMERCE WEB SITE",
     company: "University group Project",
     description: ` for a mobile accessories store, implementing the crud operations with admin panel. `,
-    technologies: ["PHP", "JavaScript", "HTTML", "CSS","MySQL"],
+    technologies: ["PHP", "JavaScript", "HTTML", "CSS", "MySQL"],
   },
   {
-    year: "2021",
-    role: "Library Management System Developer",
+    year: "2023",
+    role: "LIBRARY MANAGEMENT SYSTEM",
     company: "Personal Project",
     description: `Created a standalone library management system using C# and SQL Server Management Studio. Implemented features for book cataloging, student management, and book checkout processes.`,
     technologies: ["C#", "SQL Server", "SSMS"],
@@ -48,11 +55,18 @@ export const PROJECTS = [
     technologies: ["HTML", "CSS", "ReactJS", "Redux"],
   },
   {
+    title: "Flickbase",
+    image: project4,
+    description:
+      "Flickbase is an article database app that lets users search, explore, and save articles, offering a personalized reading experience.",
+    technologies: ["HTML", "CSS", "ReactJS", "NodeJS","Express","MongoDB"],
+  },
+  {
     title: "ROOM BOOKING SYSTEM",
     image: project2,
     description:
       "Developed a standalone room reservation system for efficient allocation, scheduling, and accurate tracking of room availability.",
-    technologies: ["Java","MySQL"],
+    technologies: ["Java", "MySQL"],
   },
   {
     title: "Portfolio Website",

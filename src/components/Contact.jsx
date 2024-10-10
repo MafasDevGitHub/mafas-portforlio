@@ -12,7 +12,7 @@ const Contact = () => {
 
     // Your WhatsApp number in international format (e.g., +1234567890)
     const whatsappNumber = '+94761200230'; // Replace with your actual WhatsApp number
-    const welcomeMessage = encodeURIComponent("Hello! I'm interested in learning more about your work. How can we connect?");
+    const welcomeMessage = encodeURIComponent("Hello! I am currently seeking internship opportunities and would love to discuss how I can contribute to your team. Could we connect to explore potential collaboration?");
 
     return (
         <motion.div
