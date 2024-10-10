@@ -5,6 +5,7 @@ import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Project from "./components/Projects";
 import Technologies from "./components/Technologies";
+import About from './components/About'
 
 const App = () => {
     return (
@@ -21,6 +22,7 @@ const App = () => {
 
                     <Routes>
                         <Route path="/" element={<Hero />} />
+                        <Route path='/about' element={<About/>}/>
                         <Route path="/technologies" element={<Technologies />} />
                         <Route path="/projects" element={<Project />} />
                         <Route path="/experience" element={<Experience />} />

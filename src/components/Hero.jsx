@@ -4,6 +4,7 @@ import { HERO_CONTENT } from "../constants";
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { useState, useEffect } from 'react';
+import { CONTACT } from "../constants";
 
 const Hero = () => {
     const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.2 });
@@ -86,17 +87,20 @@ const Hero = () => {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 download="Mafas_resume.pdf"
-                                className="bg-white rounded-harf p-2 text-md text-stone-1000 w-full max-w-xs flex-grow text-center
+                                className="bg-white rounded-harf p-1 text-md text-stone-1000 w-full max-w-xs flex-grow text-center
                                 hover:bg-stone-200 hover:text-stone-700 hover:shadow-lg transition duration-200 ease-on-out">
                                 Download Resume
                             </a>
-                            <a href={`https://wa.me/${whatsappNumber}?text=${welcomeMessage}`}
+                            <a
+                                href={`mailto:${CONTACT.email}?subject=Hire%20Me`}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="bg-white rounded-harf p-5 text-md text-stone-1000 w-full max-w-xs flex-grow text-center
-                                hover:bg-stone-200 hover:text-stone-700 hover:shadow-lg transition duration-200 ease-on-out">
+                                className="bg-white rounded-harf p-4 text-md text-stone-1000 w-full max-w-xs flex-grow text-center
+                                hover:bg-stone-200 hover:text-stone-700 hover:shadow-lg transition duration-200 ease-out"
+                            >
                                 Hire Me
                             </a>
+
                         </div>
 
 
