@@ -9,18 +9,18 @@ export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer s
 
 export const EXPERIENCES = [
   {
-    year: "2024 - Present [In Progress]",
+    year: "2025",
+    role: "AI Based Learning Platform",
+    company: "Group Project [contribution: Full Stack]",
+    description: `AI-Powered Recommendation System for a learning platform using the MERN stack project providing personalized course and book recommendations using machine learning. Features include tailored suggestions, book image uploads with OCR, and API integrations for detailed information retrieval `,
+    technologies: ["ReactJS", "NodeJS", "ExpressJS","MongoDB","Machine Learning"],
+  },
+  {
+    year: "2024",
     role: "DAILY NEWS HUB",
     company: "Personal Project",
     description: `Developed an engaging platform for reading news with dynamic, interactive content, leveraging a virtual database to efficiently store and retrieve real-time updates. Focused on creating a seamless, user-friendly interface for enhanced user experience`,
     technologies: ["ReactJS", "Redux"],
-  },
-  {
-    year: "2024 - Present [In Progress]",
-    role: "FLICKBASE",
-    company: "Personal Project",
-    description: `Flickbase is a dynamic article database application designed to offer users an intuitive and personalized reading experience. The platform allows users to search for, explore, and save articles across various topics, ensuring they can easily access the content that interests them the most. With a focus on performance and scalability, I contributed to the development of the app by implementing both the front-end and back-end.`,
-    technologies: ["ReactJS", "NodeJS","Express","MongoDB"],
   },
   {
     year: "2023",
@@ -47,6 +47,13 @@ export const EXPERIENCES = [
 
 
 export const PROJECTS = [
+  {
+    title: "AI Based Learning Platform",
+    image: project4,
+    description:
+      "AI-Powered Recommendation System for a learning platform using the MERN stack project providing personalized course and book recommendations using machine learning. Features include tailored suggestions, book image uploads with OCR, and API integrations for detailed information retrieval",
+    technologies: ["ReactJS", "NodeJS", "ExpressJS","MongoDB","Machine Learning"],
+  },
   {
     title: "Daily News Hub",
     image: project1,

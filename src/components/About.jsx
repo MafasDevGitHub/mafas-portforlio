@@ -46,10 +46,10 @@ const About = () => {
         >
           <h2 className="text-2xl font-semibold text-gray-100 mb-4">Personal Information</h2>
           <div className="text-gray-300"><strong className="text-white">Name:</strong> Mohamed Mafas</div>
-          <div className="text-gray-300"><strong className="text-white">DOB:</strong> 22-10-2002</div>
+          <div className="text-gray-300"><strong className="text-white">DOB:</strong> 17-06-2002</div>
           <div className="text-gray-300"><strong className="text-white">Lives In:</strong> Narammala, Kurunegala</div>
-          <div className="text-gray-300"><strong className="text-white">Interest:</strong> Web/Mobile App Development</div>
-          <div className="text-gray-300"><strong className="text-white">Languages:</strong> English (good), Tamil (fluent), Sinhala (fluent)</div>
+          <div className="text-gray-300"><strong className="text-white">Interest:</strong> Full Stack Development</div>
+          <div className="text-gray-300"><strong className="text-white">Languages:</strong> English, Tamil, Sinhala</div>
           <div className="text-gray-300"><strong className="text-white">E-Mail:</strong> mafas7647@gmail.com</div>
           <div className="text-gray-300"><strong className="text-white">Phone:</strong> +94 76 1 200 230</div>
           <div className="text-gray-300"><strong className="text-white">Career Goal:</strong> Full-Stack Development</div>
